@@ -8,13 +8,13 @@ from rest_framework import status
 from django.shortcuts import get_object_or_404
 # Create your views here.
 
-class BlogView(APIView):
+# class BlogView(APIView):
 
-    def get(self, request, *args, **kwargs):
-        posts = BlogPost.objects.all()
-        serializer = BlogPostSerializer(posts, many=True)
+#     def get(self, request, *args, **kwargs):
+#         posts = BlogPost.objects.all()
+#         serializer = BlogPostSerializer(posts, many=True)
 
-        return Response(serializer.data)
+#         return Response(serializer.data)
 
 @api_view(['GET', 'POST'])
 def post_list(request, *args, **kwargs):
