@@ -1,1 +1,1 @@
-web: gunicorn motiv8webapi.wsgi
+web: gunicorn motiv8webAPI.wsgi
