@@ -8,7 +8,7 @@ from django.contrib.auth.models import User
 
 
 class BlogPost(models.Model):
-    title = models.CharField(max_length=500)
+    title = models.CharField(max_length=400)
     content = models.TextField()
     date_posted = models.DateTimeField(default=timezone.now)
     author = models.ForeignKey(settings.AUTH_USER_MODEL,on_delete=models.CASCADE, default=User)
