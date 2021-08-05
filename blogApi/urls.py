@@ -5,6 +5,6 @@ from blogApi import views
 urlpatterns = [
     path('blog', views.post_list,),
     path('blog/post/<int:pk>', views.post_detail),
-    path('', views.BlogView.as_view()),
+    # path('', views.BlogView.as_view()),
 
 ]
